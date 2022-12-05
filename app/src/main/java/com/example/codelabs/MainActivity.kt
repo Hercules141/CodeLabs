@@ -34,7 +34,7 @@ class MainActivity: AppCompatActivity(){
             .commit()
 
         binding.navButton.setOnClickListener(){
-            it.setBackgroundColor(Color.RED)
+            it.setBackgroundColor(Color.GREEN)
 //            navController.navigate(R.id.ANewWorld)
             navController.navigate(R.id.action_startFragment_to_ANewWorld)
 

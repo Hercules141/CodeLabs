@@ -3,4 +3,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="ANewWorldText">Welcome to the new world!</string>
     <string name="StartFragmentText">"I'm the blank start fragment"</string>
+    <string name="ANewWorldButtonText">"I wanna go home! x'/"</string>
 </resources>

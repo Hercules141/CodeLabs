@@ -1,10 +1,14 @@
 package com.example.codelabs
 
+import android.graphics.Color
+import android.os.Binder
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.codelabs.databinding.FragmentANewWorldBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,6 +24,8 @@ class ANewWorld : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    lateinit var binding: FragmentANewWorldBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,9 +39,16 @@ class ANewWorld : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding = FragmentANewWorldBinding.inflate(inflater)
+        binding.button.setOnClickListener(){
+            it.setBackgroundColor(Color.GREEN)
+            findNavController().navigate(R.id.action_ANewWorld_to_startFragment)
+        }
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_a_new_world, container, false)
+//        return inflater.inflate(R.layout.fragment_a_new_world, container, false)
+        return binding.root
     }
+
 
     companion object {
         /**
