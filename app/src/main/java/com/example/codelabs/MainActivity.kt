@@ -1,6 +1,7 @@
 package com.example.codelabs
 
 import android.annotation.SuppressLint
+import android.app.TaskStackBuilder
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
@@ -32,12 +33,17 @@ class MainActivity: AppCompatActivity(){
             .setPrimaryNavigationFragment(navHostFragment)
             .commit()
 
-
         binding.navButton.setOnClickListener(){
-            it.setBackgroundColor(Color.GREEN)
+            it.setBackgroundColor(Color.RED)
 //            navController.navigate(R.id.ANewWorld)
-            navHostFragment.navController.navigate(R.id.action_startFragment_to_ANewWorld)
+            navController.navigate(R.id.action_startFragment_to_ANewWorld)
 
         }
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+        navController = navHostFragment.navController
     }
 }
