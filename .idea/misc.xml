@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Home/Projects/AndroidStudio/CodeLabs/app/src/main/res/layout/activity_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/Home/Projects/AndroidStudio/CodeLabs/app/src/main/res/layout/fragment_a_new_world.xml" value="0.1" />
+        <entry key="..\:/Home/Projects/AndroidStudio/CodeLabs/app/src/main/res/layout/fragment_start.xml" value="0.1" />
       </map>
     </option>
   </component>
